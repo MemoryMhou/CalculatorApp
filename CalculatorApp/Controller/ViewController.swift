@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         OutPutLabel.text = "0"
     }
     
+    
+    
     @IBAction func numberPressed(_ sender: UIButton) {
         if runningNumber.count <= 8 {
             runningNumber += "\(sender.tag)"
