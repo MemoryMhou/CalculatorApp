@@ -7,10 +7,8 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
-    
- @IBOutlet weak var OutPutLabel: UILabel!
+    @IBOutlet weak var outputLabel: UILabel!
     
     var runningNumber = ""
     var leftValue = ""
@@ -19,15 +17,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        OutPutLabel.text = "0"
+        outputLabel.text = "0"
     }
-    
-    
     
     @IBAction func numberPressed(_ sender: UIButton) {
         if runningNumber.count <= 8 {
             runningNumber += "\(sender.tag)"
-            OutPutLabel.text = runningNumber
+            outputLabel.text = runningNumber
         }
     }
     
@@ -38,35 +34,34 @@ class ViewController: UIViewController {
     @IBAction func dotPressed(_ sender: UIButton) {
         if !runningNumber.contains(".") {
             runningNumber += "."
-            OutPutLabel.text = runningNumber
+            outputLabel.text = runningNumber
         }
     }
     
     @IBAction func equalPressed(_ sender: UIButton) {
-         
-        if let leftDouble = Double(leftValue), let rightDouble = Double(runningNumber), let operation = currentOperation {
+        if let leftDouble = Double(leftValue),
+           let rightDouble = Double(runningNumber),
+           let operation = currentOperation {
             if let result = CalculatorModel.calculate(leftValue: leftDouble, rightValue: rightDouble, operation: operation) {
                 if result.truncatingRemainder(dividingBy: 1) == 0 {
-                   
-                    OutPutLabel.text = "\(Int(result))"
+                    outputLabel.text = "\(Int(result))"
                 } else {
-                    
-                    OutPutLabel.text = "\(result)"
+                    outputLabel.text = "\(result)"
                 }
                 leftValue = "\(result)"
             } else {
-                OutPutLabel.text = "Error"
+                outputLabel.text = "Error"
             }
             runningNumber = ""
         }
     }
     
     @IBAction func operationPressed(_ sender: UIButton) {
-        
-        if let number = Double(runningNumber), let operation = sender.titleLabel?.text {
+        if let number = Double(runningNumber),
+           let operation = sender.titleLabel?.text {
             leftValue = runningNumber
             runningNumber = ""
-            OutPutLabel.text = operation
+            outputLabel.text = operation
             switch operation {
             case "+":
                 currentOperation = .add
@@ -82,11 +77,10 @@ class ViewController: UIViewController {
         }
     }
     
-    
     func clearValues() {
         runningNumber = ""
         leftValue = ""
         currentOperation = nil
-        OutPutLabel.text = "0"
+        outputLabel.text = "0"
     }
 }
