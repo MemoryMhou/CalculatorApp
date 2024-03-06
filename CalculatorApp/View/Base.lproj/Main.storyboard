@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="d5s-Sb-NZT">
+                                <rect key="frame" x="12.666666666666657" y="353" width="368" height="450"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mU6-dV-kec">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsQ-ok-jJa" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.64705884459999996" green="0.64705884459999996" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="RPo-BE-Gck"/>
+                                                    <constraint firstAttribute="height" constant="80" id="xag-Fv-rEY"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="AC">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="allClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDh-2c-I5y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0y7-xB-Guo" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.64705884459999996" green="0.64705884459999996" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="0D7-Hi-Hcl"/>
+                                                    <constraint firstAttribute="width" constant="80" id="jIr-h8-2fm"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="±">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-Ip-Sv7" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.64705884459999996" green="0.64705884459999996" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="bnU-JG-0dv"/>
+                                                    <constraint firstAttribute="height" constant="80" id="nmj-Im-E6T"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="﹪">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qD2-2b-wh1" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.62232983109999995" blue="0.03230064362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="MUb-xa-RXu"/>
+                                                    <constraint firstAttribute="width" constant="80" id="hgg-Tv-Gfr"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="÷">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g29-Aq-wUh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="hy2-zZ-3Cx"/>
+                                            <constraint firstAttribute="height" constant="80" id="iXf-ke-8Ix"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SfN-M8-Nbj">
+                                        <rect key="frame" x="0.0" y="92.666666666666686" width="368" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2H-fO-P3y" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Ach-L2-yCd"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Ahq-Ve-8aA"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="7">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1sP-ub-87f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncZ-gR-GeY" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="DpM-n7-G2t"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Ot2-Q7-vhU"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKR-Qf-aZh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lK6-1k-8dY" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="UWU-ja-5xe"/>
+                                                    <constraint firstAttribute="width" constant="80" id="gka-n6-yjM"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="9">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDF-5S-HPS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beC-6q-a4d" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.62232983109999995" blue="0.03230064362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="79g-hT-pht"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Ezp-k5-9fx"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="×">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWl-r8-UCC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="NtW-aG-t4T"/>
+                                            <constraint firstAttribute="width" constant="350" id="YbI-Rv-aby"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kYb-E1-0fA">
+                                        <rect key="frame" x="0.0" y="185" width="368" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sx-sX-gcc" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="5TV-ns-bB5"/>
+                                                    <constraint firstAttribute="width" constant="80" id="ZQO-Fs-hAd"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="4">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2F-UZ-0nu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfY-Zv-8JY" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="gYL-ZU-6mb"/>
+                                                    <constraint firstAttribute="height" constant="80" id="wzh-aL-GB9"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="5">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFx-U4-TtI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHU-D3-Q33" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="hES-tp-dWe"/>
+                                                    <constraint firstAttribute="width" constant="80" id="v8w-5c-k8e"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="6">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZK2-kw-gnM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TX-dI-yC0" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.62232983109999995" blue="0.03230064362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="id6-9t-XGd"/>
+                                                    <constraint firstAttribute="height" constant="80" id="waX-d9-F6J"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ScW-Zj-WMv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="1rm-Dh-ViD"/>
+                                            <constraint firstAttribute="width" constant="350" id="R6I-MO-FDV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RJW-Gn-gwX">
+                                        <rect key="frame" x="0.0" y="277.66666666666663" width="368" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdN-wC-cvB" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="1xP-6O-X02"/>
+                                                    <constraint firstAttribute="width" constant="80" id="v97-lF-4SD"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eCP-Tz-kIg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csh-1J-Gov" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Ol5-Zj-bzr"/>
+                                                    <constraint firstAttribute="width" constant="80" id="iXz-Jk-Kes"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYC-X1-bsE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yZ-WB-c9M" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="qnw-53-GU6"/>
+                                                    <constraint firstAttribute="height" constant="80" id="wRC-DE-tra"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRm-n1-hVZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDd-gS-3Fa" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.62232983109999995" blue="0.03230064362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="SEV-Tz-K6V"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Vwb-p9-81v"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                    <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tlo-rs-nlI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="4E1-vZ-HxO"/>
+                                            <constraint firstAttribute="height" constant="80" id="MNM-v3-FEG"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="rQG-Z0-kth">
+                                        <rect key="frame" x="0.0" y="370" width="368" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="X9q-lv-jg6">
+                                                <rect key="frame" x="0.0" y="0.0" width="368" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elX-f1-Dbt" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="80"/>
+                                                        <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="AUd-22-StN"/>
+                                                            <constraint firstAttribute="height" constant="80" id="DlZ-7P-PzB"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="0">
+                                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                            <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLV-OR-3rk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4M-Gb-Ryd" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                        <rect key="frame" x="190" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="Uir-kH-Woy"/>
+                                                            <constraint firstAttribute="height" constant="80" id="xig-jD-Gi6"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title=".">
+                                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                            <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="dotPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z8e-wg-9UC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A50-3y-kir" customClass="RoundButton" customModule="CalculatorApp" customModuleProvider="target">
+                                                        <rect key="frame" x="288" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="1" green="0.62232983109999995" blue="0.03230064362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="G0d-6D-mcl"/>
+                                                            <constraint firstAttribute="width" constant="80" id="OAu-OW-wB1"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="=">
+                                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                            <color key="baseForegroundColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jts-3t-yK0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="M7x-lm-pwY"/>
+                                    <constraint firstAttribute="height" constant="450" id="Vbj-V0-6PK"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkH-t5-gdK">
+                                <rect key="frame" x="16" y="134" width="361" height="194"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" red="0.99215692280000001" green="0.99215680360000003" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d5s-Sb-NZT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="874-Bm-aaO"/>
+                            <constraint firstItem="YkH-t5-gdK" firstAttribute="width" secondItem="d5s-Sb-NZT" secondAttribute="width" multiplier="1.03143" id="HPn-4w-hWU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d5s-Sb-NZT" secondAttribute="bottom" constant="15" id="IVx-ev-ANJ"/>
+                            <constraint firstItem="YkH-t5-gdK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="JJQ-mt-cGV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d5s-Sb-NZT" secondAttribute="trailing" constant="12.33" id="Jff-Nj-dhS"/>
+                            <constraint firstItem="d5s-Sb-NZT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12.67" id="VTt-Qs-JZE"/>
+                            <constraint firstItem="d5s-Sb-NZT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="caw-Kr-0Vh"/>
+                            <constraint firstItem="d5s-Sb-NZT" firstAttribute="top" secondItem="YkH-t5-gdK" secondAttribute="bottom" constant="25" id="gsG-C0-6Wf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="YkH-t5-gdK" id="Xqy-vs-1cV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0y7-xB-Guo">
+            <size key="intrinsicContentSize" width="44" height="55"/>
+        </designable>
+        <designable name="2yZ-WB-c9M">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+        <designable name="5sx-sX-gcc">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+        <designable name="6TX-dI-yC0">
+            <size key="intrinsicContentSize" width="33.666666666666664" height="55"/>
+        </designable>
+        <designable name="A50-3y-kir">
+            <size key="intrinsicContentSize" width="44" height="55"/>
+        </designable>
+        <designable name="Csh-1J-Gov">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+        <designable name="MdN-wC-cvB">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+        <designable name="TsQ-ok-jJa">
+            <size key="intrinsicContentSize" width="66.333333333333329" height="55"/>
+        </designable>
+        <designable name="YDd-gS-3Fa">
+            <size key="intrinsicContentSize" width="44" height="55"/>
+        </designable>
+        <designable name="b2H-fO-P3y">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+        <designable name="beC-6q-a4d">
+            <size key="intrinsicContentSize" width="44" height="55"/>
+        </designable>
+        <designable name="d4M-Gb-Ryd">
+            <size key="intrinsicContentSize" width="32" height="55"/>
+        </designable>
+        <designable name="elX-f1-Dbt">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+        <designable name="jHU-D3-Q33">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+        <designable name="lK6-1k-8dY">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+        <designable name="ncZ-gR-GeY">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+        <designable name="qD2-2b-wh1">
+            <size key="intrinsicContentSize" width="44" height="55"/>
+        </designable>
+        <designable name="wzk-Ip-Sv7">
+            <size key="intrinsicContentSize" width="54" height="55"/>
+        </designable>
+        <designable name="zfY-Zv-8JY">
+            <size key="intrinsicContentSize" width="41.666666666666664" height="55"/>
+        </designable>
+    </designables>
+</document>
